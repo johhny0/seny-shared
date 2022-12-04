@@ -3,3 +3,7 @@
 ## shared
 
 Project to run database, kafka and anything non-project related
+
+## Kafdrop
+
+http://localhost/
