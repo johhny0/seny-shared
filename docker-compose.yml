@@ -12,6 +12,8 @@ services:
       - "3306:3306"
     volumes:
       - "mysql_data:/var/lib/mysql"
+    networks:
+      - seny-network
 
   #MONGODB
   mongo-express:
@@ -104,5 +106,6 @@ volumes:
 networks: 
   seny-network:
     driver: bridge  
+    external: true
   mongo-compose-network:
     driver: bridge
